@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "SkandaSBhat" --password-stdin
-        docker image build -t SkandaSBhat/hello-python .
-        docker push SkandaSBhat/hello-python
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "skandasbhat" --password-stdin
+        docker image build -t skandasbhat/hello-python .
+        docker push skandasbhat/hello-python
